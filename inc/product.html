@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products form</title>
+    <link rel="stylesheet" href="assets/css/olthostyle.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="post">
+            <h3>PRODUCTS</h3>
+
+            <input type="text" name="sku" required placeholder="enter sku">
+            
+           <select name="user_type" id="">
+            <option value="user">category id</option>
+            <option value="admin">A</option>
+            <option value="admin">B</option>
+            <option value="admin">C</option>
+        </select>
+
+           <select name="user_type" id="">
+            <option value="user">sub category id</option>
+            <option value="admin">A</option>
+            <option value="admin">B</option>
+            <option value="admin">C</option>
+        </select>
+
+            <input type="text" name="name" required placeholder="product name">
+
+            <input type="text" name="price" required placeholder="products price">
+
+            <input type="number" name="quantity" required placeholder="quantity">
+
+            <input type="text" name="disount" required placeholder="discount">
+
+        <input type="file" name="img-box" required>
+
+        <textarea name="message" id="" cols="30" rows="3" placeholder="discription..."></textarea>
+
+            <input type="submit" name="submit" value="Submit" class="form-btn">
+
+            <!-- <p>already have an account? <a href="login_form.php">login now</a></p> -->
+            
+        </form>
+    </div>
+</body>
+</html> 
