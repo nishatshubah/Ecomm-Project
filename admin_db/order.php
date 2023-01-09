@@ -69,7 +69,7 @@ $allcat = $conn->query($select);
             $html .="<td><span class='smallbox ".$boxcolor."'> </span>".$row['status']."</td>";
             $html .="<td>all products list</td>";
             $html .="<td>".$row['created_at']."</td>";            
-            $html .="<td><a title='edit status' target='_blank' href='orderstatus.php?id=".$row['id']."'><i class='bi bi-pencil-square'></i></a> | <a title='order details' target='_blank' href='orderdetails.php?id=".$row['id']."'><i class='bi bi-binoculars'></i></a></td>";
+            $html .="<td><a title='edit status' target='_blank' href='orderstatus.php?id=".$row['id']."'><i class='bi bi-pencil-square'></i></a> | <a title='order details' target='_blank' href='orderdetails.php?id=".$row['id']."'><i class='bi bi-binoculars'></i></a> | <a onclick=\"return confirm('Are you sure want to delete this?');\" href='order/delete.php?id={$row['id']}'><i class='bi bi-trash'></i></a></td>";
             $html .="</tr>";
         }
         echo $html;

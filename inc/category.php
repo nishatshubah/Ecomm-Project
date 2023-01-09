@@ -4,7 +4,7 @@ $r = $conn->query($q);
 ?>
 <div class="category">
   <div class="row">
-    <div class="col-lg-12 col-md-8">
+    <div class="col-lg-12 col-md-6">
       <!-- start  -->
       <h1 class="text-center m-3 p-3">category</h1>
       <div class="row mt-3 p-3">
@@ -12,7 +12,7 @@ $r = $conn->query($q);
         while ($row = $r->fetch_assoc()) {
           ?>
 
-          <div class="col">
+          <div class="col-2">
             <div class="card">
               <img src="assets/images/category/<?= $row['images'] ?>" class="card-img-top" alt="...">
               <div class="card-body">

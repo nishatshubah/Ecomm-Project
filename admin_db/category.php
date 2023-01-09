@@ -68,7 +68,7 @@ require("../inc/connection.php");
                                 <td>".$row['name']."</td>
                                 <td>".$row['description']."</td>
                                 <td><img width='60px' src='../assets/categorys/".$row['images']."'/></td>
-                                <th>Edit | Delete</th>
+                                <th><a href='#'><i class='bi bi-pencil-square'></i></a> | <a href='#'><i class='bi bi-trash-fill'></i></a></th>
                             </tr>";
                             }
                             ?>
